@@ -15,9 +15,7 @@ const Home = () => {
 
   const handleOptions = () => {
     if (!user) {
-      return toast.error(
-        'At first, Please login your account. If you do not have any account than you should need to sign up.'
-      );
+      return toast.error('Please register if you do not have an account.');
       dispatch({ type: REMOVE_MESSAGE });
     } else {
       return null;
